@@ -7,7 +7,7 @@ import { RoboAnimation } from "@/components/robo-animation"
 import Image from "next/image"
 
 export default function Hero() {
-  const contactNumber = process.env.NEXT_PUBLIC_CONTACT_NUMBER || "+919876543210"
+  const contactNumber = process.env.NEXT_PUBLIC_CONTACT_NUMBER 
   
   return (
     <div className="relative min-h-[calc(100vh-76px)] flex items-center py-8 md:py-0">
