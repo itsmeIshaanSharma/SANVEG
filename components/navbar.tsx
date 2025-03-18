@@ -41,7 +41,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center">
           <a href="https://forms.gle/BFFbqQaWgBXJyNy79" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white shadow-glow-hover">Register</Button>
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white shadow-glow-hover rounded-full">Register</Button>
           </a>
         </div>
 
