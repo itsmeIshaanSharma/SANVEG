@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { toast } from "sonner"
 import { Users, Star, FileText, Sparkles } from "lucide-react"
-import { SparklesCore } from "@/components/sparkles"
+import { Sparkles } from "@/components/sparkles"
 
 export default function RegisterPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -89,7 +89,7 @@ export default function RegisterPage() {
     <div className="relative min-h-screen bg-background/50">
       {/* Sparkles Background */}
       <div className="fixed inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background/80" />
-      <SparklesCore
+      <Sparkles
         id="tsparticles"
         background="transparent"
         minSize={1.5}
