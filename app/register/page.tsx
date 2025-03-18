@@ -9,7 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { toast } from "sonner"
-import { Users, Star, FileText, Sparkles } from "lucide-react"
+import { Users, Star, FileText, Sparkles as SparklesIcon } from "lucide-react"
 import { Sparkles } from "@/components/sparkles"
 
 export default function RegisterPage() {
@@ -397,7 +397,7 @@ export default function RegisterPage() {
                       "Registering..."
                     ) : (
                       <>
-                        <Sparkles className="mr-2 h-5 w-5" />
+                        <SparklesIcon className="mr-2 h-5 w-5" />
                         Register Now
                       </>
                     )}
