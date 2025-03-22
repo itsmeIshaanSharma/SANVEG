@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Users, Trophy, Phone } from "lucide-react"
 import { RoboAnimation } from "@/components/robo-animation"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Hero() {
   const contactNumber = process.env.NEXT_PUBLIC_CONTACT_NUMBER 
@@ -40,12 +41,12 @@ export default function Hero() {
               </div>
 
               <div className="hidden md:flex flex-row items-start justify-start gap-3">
-                <a href="https://forms.gle/BFFbqQaWgBXJyNy79" target="_blank" rel="noopener noreferrer" className="w-auto">
+                <Link href="/register" className="w-auto">
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 shadow-glow-hover">
                     <Users className="mr-2 h-5 w-5" />
                     Register Now
                   </Button>
-                </a>
+                </Link>
                 <a href={`tel:${contactNumber}`} className="w-auto">
                   <Button size="lg" variant="outline" className="text-white border-green-500 hover:bg-green-500/20 shadow-glow-hover">
                     <Phone className="mr-2 h-5 w-5 text-green-500" />
@@ -99,12 +100,12 @@ export default function Hero() {
 
             {/* Mobile Buttons - After Event Details */}
             <div className="flex md:hidden flex-col items-center justify-center gap-3 order-3 col-span-1 md:col-span-2">
-              <a href="https://forms.gle/BFFbqQaWgBXJyNy79" target="_blank" rel="noopener noreferrer" className="w-full">
+              <Link href="/register" className="w-full">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 shadow-glow-hover w-full">
                   <Users className="mr-2 h-5 w-5" />
                   Register Now
                 </Button>
-              </a>
+              </Link>
               <a href={`tel:${contactNumber}`} className="w-full">
                 <Button size="lg" variant="outline" className="text-white border-green-500 hover:bg-green-500/20 shadow-glow-hover w-full">
                   <Phone className="mr-2 h-5 w-5 text-green-500" />

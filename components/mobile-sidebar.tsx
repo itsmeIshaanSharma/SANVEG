@@ -61,11 +61,11 @@ export function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
 
               {/* Register Button */}
               <div className="p-4 border-t border-white/10">
-                <a href="https://forms.gle/BFFbqQaWgBXJyNy79" target="_blank" rel="noopener noreferrer">
+                <Link href="/register">
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white shadow-glow-hover">
                     Register
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
